@@ -1,0 +1,10 @@
+<mat-list>
+    <mat-list-item role="listitem" *ngFor="let g of games">{{g.name}}</mat-list-item>
+</mat-list>
+
+<div class="list">
+    <button *ngIf="pageNo > 1" mat-raised-button color="primary">Previous</button>
+        <!-- &nbsp = non-breaking space -->
+        &nbsp;
+    <button mat-raised-button color="primary">Next</button>
+</div>
